@@ -10,7 +10,7 @@ module.exports = {
     vendor: ['react-bootstrap']
   },
   output: {
-    path: path.resolve(__dirname, '../public'),
+    path: path.resolve(__dirname, '../docs'),
     publicPath: '/',
     filename: '[name].[fullhash].js'
   },
@@ -68,6 +68,7 @@ module.exports = {
     host: 'localhost',
     port,
     historyApiFallback: true,
-    hot: true
+    hot: true,
+    contentBase: path.resolve(__dirname, '../docs')
   }
 }
