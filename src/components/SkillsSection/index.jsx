@@ -36,13 +36,11 @@ const SkillsSection = () => (
               <ProgressBar variant="info" now={80} />
               <div>CSS</div>
               <ProgressBar variant="info" now={70} />
-              <div>Express-Js</div>
-              <ProgressBar variant="info" now={65} />
               <div>React</div>
               <ProgressBar variant="info" now={75} />
               <div>React Native</div>
               <ProgressBar variant="info" now={70} />
-              <div>Next-Js</div>
+              <div>Next-Js(Pages)</div>
               <ProgressBar variant="info" now={80} />
             </SkillsCardBack>
           </SkillsCardInner>
@@ -58,6 +56,10 @@ const SkillsSection = () => (
             <SkillsCardBack className="d-flex flex-column justify-content-center">
               <div>Node-Js</div>
               <ProgressBar variant="info" now={65} />
+              <div>Express-Js</div>
+              <ProgressBar variant="info" now={65} />
+              <div>Next-Js(API)</div>
+              <ProgressBar variant="info" now={80} />
               <div>PostgreSQL</div>
               <ProgressBar variant="info" now={70} />
               <div>Firebase</div>
