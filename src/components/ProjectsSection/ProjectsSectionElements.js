@@ -43,6 +43,15 @@ export const ImageContainer = styled.div`
     width: 650px;
     padding: 20px;
   }
+
+
+  @media screen and (max-width: 650px) {
+    max-height: 400px;
+    height: 100%;
+    width: 100vw;
+    padding: 20px;
+  }
+
   img {
     object-fit: contain;
   }
