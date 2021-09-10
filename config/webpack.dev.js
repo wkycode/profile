@@ -58,6 +58,9 @@ module.exports = {
     }
   },
   plugins: [
+    new webpack.DefinePlugin({
+      'process.env.PUBLIC_FOLDER': JSON.stringify('')
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../src/template.html'),

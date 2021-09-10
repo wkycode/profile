@@ -11,7 +11,7 @@ const SkillsSection = () => (
         <SkillsCard>
           <SkillsCardInner>
             <SkillsCardFront>
-              <SkillsIcon src="/images/svg-1.svg" />
+              <SkillsIcon src={`${process.env.PUBLIC_FOLDER}/images/svg-1.svg`} />
               <SkillsH2>Video Editing</SkillsH2>
               <SkillsP>Hover and see more</SkillsP>
             </SkillsCardFront>
@@ -27,7 +27,7 @@ const SkillsSection = () => (
         <SkillsCard>
           <SkillsCardInner>
             <SkillsCardFront>
-              <SkillsIcon src="/images/svg-2.svg" />
+              <SkillsIcon src={`${process.env.PUBLIC_FOLDER}/images/svg-2.svg`} />
               <SkillsH2>Front-end Development</SkillsH2>
               <SkillsP>Hover and see more</SkillsP>
             </SkillsCardFront>
@@ -51,7 +51,7 @@ const SkillsSection = () => (
         <SkillsCard>
           <SkillsCardInner>
             <SkillsCardFront>
-              <SkillsIcon src="/images/svg-3.svg" />
+              <SkillsIcon src={`${process.env.PUBLIC_FOLDER}/images/svg-3.svg`} />
               <SkillsH2>Back-end Development</SkillsH2>
               <SkillsP>Hover and see more</SkillsP>
             </SkillsCardFront>

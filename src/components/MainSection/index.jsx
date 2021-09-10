@@ -13,7 +13,7 @@ const MainSection = () => {
   return (
     <MainContainer id="top">
       <MainBg>
-        <VideoBg autoPlay loop muted src="/videos/tech.mp4" type="video/mp4" />
+        <VideoBg autoPlay loop muted src={`${process.env.PUBLIC_FOLDER}/videos/tech.mp4`} type="video/mp4" />
       </MainBg>
       <MainContent>
         <MainH1>HI , I'M JAMES</MainH1>

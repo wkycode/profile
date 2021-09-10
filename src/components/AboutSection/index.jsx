@@ -13,13 +13,13 @@ const AboutSection = ({ imgStart, topLine, buttonLabel, headline, description, a
               <Heading>{headline}</Heading>
               <Subtitle>{description}</Subtitle>
               <BtnWrap>
-                <DlButton href="/files/Cv.pdf" download="" primary="true" dark="true">{buttonLabel}</DlButton>
+                <DlButton href={`${process.env.PUBLIC_FOLDER}/files/Cv.pdf`} download="" primary="true" dark="true">{buttonLabel}</DlButton>
               </BtnWrap>
             </TextWrapper>
           </Column1>
           <Column2>
             <ImgWrap>
-              <Img src="/images/svg-1.svg" alt={alt} />
+              <Img src={`${process.env.PUBLIC_FOLDER}/images/svg-1.svg`} alt={alt} />
             </ImgWrap>
           </Column2>
         </AboutRow>
