@@ -57,7 +57,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '../src/template.html'),
-      filename: 'index.html'
+      filename: 'index.html',
+      publicPath: '/profile'
     }),
     new MiniCssExtractPlugin({
       filename: 'styles/styles.[hash].css'
