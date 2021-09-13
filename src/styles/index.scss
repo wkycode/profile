@@ -13,6 +13,17 @@
   @media only screen and (max-width:800px) {
     padding:0;
   }
-
 }
 
+#btn{
+  width:42px;
+  height: 42px;
+  border-radius: 21px;
+  align-items: center;
+  justify-items: center;
+}
+
+#footer-title{
+  font-size: 21px;
+  font-weight: 900;
+}
