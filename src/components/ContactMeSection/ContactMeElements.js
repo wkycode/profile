@@ -9,7 +9,7 @@ export const ContactMeContainer = styled.div`
   background: #010606;
 
   @media screen and (max-width: 1150px) {
-    height: 500px;
+    height: 400px;
   }
 `
 
@@ -32,7 +32,7 @@ export const ContactMeWrapper = styled.div`
   grid-gap: 16px;
   padding: 0 50px;
   
-  @media screen and (max-width: 1150px) {
+  @media screen and (max-width: 1050px) {
   grid-template-columns: 1fr;
   }
 `
