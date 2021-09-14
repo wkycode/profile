@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import Sidebar from '../Sidebar'
 import Navbar from '../Navbar'
 import MainSection from '../MainSection'
@@ -7,24 +7,23 @@ import SkillsSection from '../SkillsSection'
 import ProjectsSection from '../ProjectsSection'
 import ContactMeSection from '../ContactMeSection'
 import { homeObjOne } from '../AboutSection/Data'
-import { homeObjTwo } from '../ContactMeSection/Data'
 
 const Home = () => {
-  const [isOpened,setIsOpened] = useState(false)
+  const [isOpened, setIsOpened] = useState(false)
 
   const toggle = () => {
     setIsOpened(!isOpened)
   }
 
-  return(
+  return (
     <>
-    <Sidebar isOpened={isOpened} toggle={toggle} />
-    <Navbar toggle={toggle} />
-    <MainSection/>
-    <AboutSection {...homeObjOne}/>
-    <SkillsSection/>
-    <ProjectsSection/>
-    <ContactMeSection {...homeObjTwo}/>
+      <Sidebar isOpened={isOpened} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <MainSection />
+      <AboutSection {...homeObjOne} />
+      <SkillsSection />
+      <ProjectsSection />
+      <ContactMeSection />
     </>
   )
 }

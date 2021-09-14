@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectsContainer = styled.div`
-  height: 700px;
+  height: 810px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,18 +30,14 @@ export const ProjectsH1 = styled.div`
   }
 `
 export const ImageContainer = styled.div`
+  max-height: 700px;
   height: 100%;
-  width: 1100px;
-  padding: 30px;
+  /* width: 1100px; */
+  /* padding: 20px; */
 
   @media screen and (max-width: 1200px){
-    max-height: 400px;
+    max-height: 700px;
     height: 100%;
-    width: 100vw;
-    padding: 20px;
-  }
-
-  img {
-    object-fit: contain;
+    width: 100%;
   }
 `

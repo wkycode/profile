@@ -2,83 +2,63 @@ import React, { useState } from 'react'
 import { Carousel } from 'react-bootstrap'
 import { ProjectsContainer, ImageContainer, ProjectsH1 } from './ProjectsSectionElements'
 
+const carouselItems = [
+  {
+    link: 'https://github.com/wkycode/Project1',
+    image: 'https://i.imgur.com/nDHgGwf.png?2',
+    title: 'Project 1',
+    description: 'Retro-style Game'
+  }, {
+    link: 'https://github.com/wkycode/Project2',
+    image: 'https://i.imgur.com/qthAC5Z.png?1',
+    title: 'Project 2',
+    description: 'Instagram Clone'
+  }, {
+    link: 'https://github.com/wkycode/project3',
+    image: 'https://i.imgur.com/iQMnov5.png?1',
+    title: 'Project 3',
+    description: 'Digital Service Website'
+  }, {
+    link: 'https://github.com/wkycode/unit-4-mobileApp',
+    image: 'https://i.imgur.com/HXdthRs.png?1',
+    title: 'Project 4',
+    description: 'Youtube Viewer Boosting App'
+  }
+]
+
 const ProjectsSection = () => {
   const [index, setIndex] = useState(0)
 
-  const handleSelect = (selectedIndex, e) => {
+  const handleSelect = (selectedIndex) => {
     setIndex(selectedIndex)
   }
 
   return (
     <ProjectsContainer id="projects">
       <ProjectsH1>Projects</ProjectsH1>
-      <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
-
-        <Carousel.Item>
-          <ImageContainer>
-            <a href="https://github.com/wkycode/Project1" target="_blank" rel="noreferrer">
-              <img
-                className="d-block w-100"
-                src="https://i.imgur.com/nDHgGwf.png?2"
-                alt="First slide"
-              />
-            </a>
-          </ImageContainer>
-          <Carousel.Caption id="carousel-caption">
-            <h3>Project 1</h3>
-            <p>Retro-style Game</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <ImageContainer>
-            <a href="https://github.com/wkycode/Project2" target="_blank" rel="noreferrer">
-              <img
-                className="d-block w-100"
-                src="https://i.imgur.com/qthAC5Z.png?1"
-                alt="Second slide"
-              />
-            </a>
-          </ImageContainer>
-          <Carousel.Caption id="carousel-caption">
-            <h3>Project 2</h3>
-            <p>Instagram Clone</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <ImageContainer>
-            <a href="https://github.com/wkycode/project3" target="_blank" rel="noreferrer">
-              <img
-                className="d-block w-100"
-                src="https://i.imgur.com/iQMnov5.png?1"
-                alt="Thrid slide"
-              />
-            </a>
-          </ImageContainer>
-          <Carousel.Caption id="carousel-caption">
-            <h3>Project 3</h3>
-            <p>Digital Service Website</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <ImageContainer>
-            <a href="https://github.com/wkycode/unit-4-mobileApp" target="_blank" rel="noreferrer">
-              <img
-                className="d-block w-100"
-                src="https://i.imgur.com/HXdthRs.png?1"
-                alt="Fourth slide"
-              />
-            </a>
-          </ImageContainer>
-          <Carousel.Caption id="carousel-caption">
-            <h3>Project 4</h3>
-            <p>Youtube Viewer Boosting App</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-
-      </Carousel>
+      <div className="container">
+        <Carousel activeIndex={index} onSelect={handleSelect} interval={null}>
+          {
+            carouselItems && carouselItems.map((item, idx) => (
+              <Carousel.Item>
+                <ImageContainer>
+                  <a href={item.link} target="_blank" rel="noreferrer">
+                    <img
+                      className="d-block w-100  "
+                      src={item.image}
+                      alt={`${idx}-slide`}
+                    />
+                  </a>
+                </ImageContainer>
+                <Carousel.Caption id="carousel-caption">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </Carousel.Caption>
+              </Carousel.Item>
+            ))
+          }
+        </Carousel>
+      </div>
     </ProjectsContainer>
   )
 }

@@ -13,7 +13,7 @@ export const ContactMeContainer = styled.div`
   }
 
   @media screen and (max-width: 750px) {
-    height: 1200px;
+    height: 1250px;
   }
 `
 

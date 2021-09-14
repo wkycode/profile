@@ -3,7 +3,7 @@ import React from 'react'
 import { FaInstagram, FaLinkedin, FaFacebookF, FaHome, FaPhoneAlt, FaWhatsapp } from 'react-icons/fa'
 import { FiGithub } from 'react-icons/fi'
 import { MdEmail } from 'react-icons/md'
-import { ContactMeContainer, ContactMeH1, ContactMeWrapper, BtnWrap } from './ContactMeElements'
+import { ContactMeContainer, ContactMeH1 } from './ContactMeElements'
 
 const ContactMeSection = () => (
   <ContactMeContainer id="contact-me">

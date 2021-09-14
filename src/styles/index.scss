@@ -15,6 +15,16 @@
     padding:0;
   }
 }
+.carousel-inner {
+  @extend .align-items-stretch;
+  .carousel-item {
+    @extend .h-100;
+    img.object-fit-cover {
+      object-fit: contain !important;
+      object-position: center !important;
+    }
+  }
+}
 
 #btn{
   width:42px;
