@@ -18,7 +18,7 @@ const MainSection = () => {
       <MainContent>
         <MainH1>HI , I'M JAMES</MainH1>
         <MainP>
-          Passionate in web/app design and development knowledge, producing quality work.
+          Passionate in Website/Mobile App design & development. Love all things gaming.
         </MainP>
         <MainBtnWrapper>
           <Button

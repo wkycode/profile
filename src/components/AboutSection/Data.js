@@ -2,7 +2,7 @@ export const homeObjOne = {
   id: 'about',
   topLine: 'About Me',
   headline: ' Full-stack Developer',
-  description: 'Before stepping into this industry, I used to be a real estate project assistant and a full-time Twitch & YouTube content creator. Experienced with temporary contracts and recontruction projects. Also a Top ladder player of League of Legends, familiar with OBS live streaming system and VideoEditing Software(Davinici Resolve).',
+  description: ' A full stack web developer who can develop both client and server software. In addition to mastering HTML and CSS, I also know how to Program a browser ( using JavaScript, jQuery, React, Next, or React Native) / Program a server (Node).',
   buttonLabel: 'Download CV',
   imgStart: false,
   alt: 'Game',

@@ -40,7 +40,7 @@ const ContactMeSection = () => (
             WKY James
           </h6>
           <p className="text-white">
-            A full stack web developer who can develop both client and server software. In addition to mastering HTML and CSS, I also know how to Program a browser ( using JavaScript, jQuery, React, Next, or React Native) / Program a server (Node).
+            Prior to stepping into this industry, I used to be in real-estate and a full-time Twitch & YouTube content creator. Familiar with OBS live streaming software and Video Editing Software (Davinici Resolve).
           </p>
         </div>
 
